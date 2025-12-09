@@ -32,15 +32,6 @@ import { ReservationPluginOptions } from './types';
  *   ]
  * }
  * ```
- * 
- * ## Database Migration:
- * 
- * Plugin tự động tạo bảng `stock_reservation` khi chạy migration:
- * 
- * ```bash
- * npm run migration:generate reservation
- * npm run migration:run
- * ```
  */
 @VendurePlugin({
     imports: [PluginCommonModule],

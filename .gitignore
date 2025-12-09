@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+*.log
+coverage/
+.vscode/
+.idea/
+*.swp
+*.swo
+.turbo/
+
+# Backup files
+*.bak
+*.tmp
+~*

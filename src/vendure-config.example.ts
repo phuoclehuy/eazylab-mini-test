@@ -67,22 +67,4 @@ export const config: Partial<VendureConfig> = {
         migrations: ['migrations/*.ts'],
         synchronize: false, // Always use migrations in production!
     },
-
-    /**
-     * Order options
-     */
-    orderOptions: {
-        // Order process (plugin tự động thêm reservationOrderProcess)
-        process: [defaultOrderProcess],
-        
-        // Order code strategy
-        orderCodeStrategy: {
-            // Custom order code format
-            generate: (ctx) => {
-                const timestamp = Date.now();
-                const random = Math.random().toString(36).substr(2, 9).toUpperCase();
-                return `ORD-${timestamp}-${random}`;
-            },
-        },
-    },
 };
